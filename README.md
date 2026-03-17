@@ -6,10 +6,10 @@ Projeto Integrador TADS - ETL e análise de dados do agronegócio Brasileiro com
 Explorar dados do agronegócio brasileiro, realizando um processo de ETL (Extract, Transform, Load) e construindo um dashboard interativo em Streamlit para análise e visualização dos resultados.
 
 ## Integrantes
-- Integrante A – Organização inicial
-- Integrante B – Coleta de dados
-- Integrante C – Tratamento dos dados
-- Integrante D – Dashboard interativo
+- Ícaro Juliano de deus – Organização inicial
+- William Pessoa – Coleta de dados
+- Abner Luan – Tratamento dos dados
+- Luiz Griebler – Dashboard interativo
 
 ## Planejamento das Tarefas
 

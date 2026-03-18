@@ -48,3 +48,13 @@ Dataset obtido no kaggle( adicionar possiveis links para estudo e destacar o lin
 Contem informações por estado.
 ## Objetivo 
 Mostrar a produção agricola por estado, permitindo comparações regionais e evolução ao longo dos anos.
+## Planejamento
+-ETL: limpeza e padronização do dados 
+-Análise: estatistica e graficos por estado
+-Dashboard: visualização interativa em Streamlit
+## Ideia inicial do Dashboard
+O Dashboard será desenvolvido em Streamlit e apresentará:
+- Grafico de barras mostrando a produção agrícola por estado.
+- Linha do tempo com a evolução da produção ao longo dos anos.
+- filtros interativos para selecionar estados e culturas por específicas.
+- Indicadores numéricos (KPIs) com totais e médias de produção.

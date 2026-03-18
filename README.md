@@ -47,8 +47,8 @@ Analise da produção agricola no Brasil
 Dataset obtido no kaggle( adicionar possiveis links para estudo e destacar o link que sera usado no projeto)
 Contem informações por estado.
 ## Objetivo 
-Mostrar a produção agricola por estado, permitindo comparações regionais e evolução ao longo dos anos.
-## Planejamento 
+Mostrar a produção agricola por estado, permitindo comparações regionais e evolução ao longo dos anos
+## planejamento 
 -ETL: limpeza e padronização do dados 
 -Análise: estatistica e graficos por estado
 -Dashboard: visualização interativa em Streamlit

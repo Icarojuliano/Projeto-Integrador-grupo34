@@ -44,7 +44,7 @@ Explorar dados do agronegócio brasileiro, realizando um processo de ETL (Extrac
 ## Tema do projeto
 Analise da produção agricola no Brasil 
 ## Base de dados 
-Dataset obtido no kaggle( adicionar possiveis links para estudo e destacar o link que sera usado no projetto)
+Dataset obtido no kaggle( adicionar possiveis links para estudo e destacar o link que sera usado no projeto)
 Contem informações por estado.
 ## Objetivo 
 Mostrar a produção agricola por estado, permitindo comparações regionais e evolução ao longo dos anos.

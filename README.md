@@ -41,3 +41,10 @@ Explorar dados do agronegócio brasileiro, realizando um processo de ETL (Extrac
     - dashboard.py
   - .gitignore → arquivos/pastas ignorados pelo Git
   - README.md → documentação do projeto
+## Tema do projeto
+Analise da produção agricola no Brasil 
+## Base de dados 
+Dataset obtido no kaggle( adicionar possiveis links para estudo e destacr o link que sera usado no projetto)
+Contem informações por estado.
+## Objetivo 
+Mostrar a produção agricola por estado, permitindo comparações regionais e evolução ao longo dos anos.

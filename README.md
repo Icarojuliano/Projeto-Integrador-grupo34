@@ -52,6 +52,9 @@ Mostrar a produção agricola por estado, permitindo comparações regionais e e
 -ETL: limpeza e padronização do dados 
 -Análise: estatistica e graficos por estado
 -Dashboard: visualização interativa em Streamlit
+Fluxo resumido:  
+`
+Kaggle → Extração → Limpeza/Transformação → Dados tratados → Dashboard Streamlit
 ## Ideia inicial do Dashboard
 O Dashboard será desenvolvido em Streamlit e apresentará:
 - Grafico de barras mostrando a produção agrícola por estado.

@@ -11,23 +11,23 @@ Explorar dados do agronegócio brasileiro, realizando um processo de ETL (Extrac
 - ABNER LUAN CARVALHO BONFIM – Tratamento dos dados
 - LUIZ HENRIQUE PAOLUCCI MOURA GRIEBLER DOS SANTOS – Dashboard interativo
 
-## Planejamento das Tarefas
+## Planejamento das tarefas e cronograma 
 
 - **Tarefa 1 – Organização inicial**  
   Responsável: Integrante Ícaro Juliano de Deus 
-  Descrição: Criar o repositório no GitHub, configurar a estrutura de pastas (`data`, `src`, `app`), adicionar o `README.md` inicial e incluir os colaboradores do grupo.
+  Descrição: Criar o repositório no GitHub, configurar a estrutura de pastas (`data`, `src`, `app`), adicionar o `README.md` inicial e incluir os colaboradores do grupo, prazo de entrega 17/03/2026.
 
 - **Tarefa 2 – Coleta de dados (ETL – Extract)**  
   Responsável: Integrante William Pessoa 
-  Descrição: Pesquisar e baixar datasets relevantes sobre o agronegócio brasileiro, organizar os arquivos brutos na pasta `data/` e documentar a origem dos dados no README.
+  Descrição: Pesquisar e baixar datasets relevantes sobre o agronegócio brasileiro, organizar os arquivos brutos na pasta `data/` e documentar a origem dos dados no README, prazo de entrega 20/03/2026 .
 
 - **Tarefa 3 – Tratamento dos dados (ETL – Transform)**  
   Responsável: Integrante Abner Luan  
-  Descrição: Criar scripts Python em `src/etl.py` para limpeza, normalização e transformação dos dados, salvando os resultados tratados em `data/processed/`.
+  Descrição: Criar scripts Python em `src/etl.py` para limpeza, normalização e transformação dos dados, salvando os resultados tratados em `data/processed/`, prazo de entrega 21/03/2026.
 
 - **Tarefa 4 – Dashboard interativo (Load + Visualização)**  
   Responsável: Integrante Luiz Griebler  
-  Descrição: Desenvolver o aplicativo Streamlit em `app/dashboard.py`, conectar aos dados tratados e implementar gráficos e tabelas interativas para análise.
+  Descrição: Desenvolver o aplicativo Streamlit em `app/dashboard.py`, conectar aos dados tratados e implementar gráficos e tabelas interativas para análise, prazo de entrega 22/03/2026.
 
 ## Estrutura de Pastas
 

@@ -3,10 +3,10 @@ import streamlit as st
 import pandas as pd
 
 # Título principal
-st.title("Dashboard - Projeto Integrador Grupo 34")
+st.title("data/raw/pam_sintetico_multiculturas_50k.csv")
 
 # Carregar dados da pasta "dados"
-df = pd.read_csv("dados/usuarios.csv")
+df = pd.read_csv("data/raw/pam_sintetico_multiculturas_50k.csv")
 
 # Exibir tabela
 st.subheader("Tabela de Usuários")

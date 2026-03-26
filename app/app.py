@@ -11,7 +11,7 @@ st.title("Dashboard - Projeto Integrador Grupo 34")
 # ==============================
 # Carregar dados
 # ==============================
-df = pd.read_csv("dados/usuarios.csv")
+df = pd.read_csv("data/raw/pam_sintetico_multiculturas_50k.csv")
 
 # ==============================
 # Barra lateral de navegação

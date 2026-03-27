@@ -31,9 +31,28 @@ if pagina == "Tabela":
 # ==============================
 # Página: Estatísticas
 # ==============================
-elif pagina == "Estatísticas":
-    st.subheader("Estatísticas Básicas")
-    st.write(df.describe(include="all"))
+elif page == "Estatísticas":
+    st.subheader("Estatísticas Simplificadas")
+
+    # Cards com métricas principais
+    st.metric("Área média plantada (ha)", round(df["area_plantada_ha"].mean(), 2))
+    st.metric("Precipitação média (mm)", round(df["precipitacao_mm"].mean(), 2))
+    st.metric("Temperatura média (°C)", round(df["temp_media_c"].mean(), 2))
+    st.metric("Rendimento médio (kg/ha)", round(df["rendimento_kg_ha"].mean(), 2))
+
+    # Ranking de municípios
+    st.subheader("Top 5 Municípios por Área Plantada")
+    st.write(
+        df.groupby("municipio")["area_plantada_ha"]
+          .sum()
+          .sort_values(ascending=False)
+          .head(5)
+    )
+
+    # Tendência por ano
+    st.subheader("Resumo por Ano")
+    resumo_ano = df.groupby("ano")[["area_plantada_ha","rendimento_kg_ha"]].mean()
+    st.line_chart(resumo_ano)
 
     # Estatísticas por grupo (se existir coluna 'cidade')
     if "cidade" in df.columns:

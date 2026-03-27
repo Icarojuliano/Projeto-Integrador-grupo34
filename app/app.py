@@ -31,33 +31,33 @@ if pagina == "Tabela":
 # ==============================
 # Página: Estatísticas
 # ==============================
-elif page == "Estatísticas":
+elif pagina == "Estatísticas":
     st.subheader("Estatísticas Simplificadas")
 
-    # Cards com métricas principais
-    st.metric("Área média plantada (ha)", round(df["area_plantada_ha"].mean(), 2))
-    st.metric("Precipitação média (mm)", round(df["precipitacao_mm"].mean(), 2))
-    st.metric("Temperatura média (°C)", round(df["temp_media_c"].mean(), 2))
-    st.metric("Rendimento médio (kg/ha)", round(df["rendimento_kg_ha"].mean(), 2))
+    # Cards com métricas principais (organizados em colunas)
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Área média (ha)", round(df["area_plantada_ha"].mean(), 2))
+    col2.metric("Precipitação média (mm)", round(df["precipitacao_mm"].mean(), 2))
+    col3.metric("Temperatura média (°C)", round(df["temp_media_c"].mean(), 2))
+    col4.metric("Rendimento médio (kg/ha)", round(df["rendimento_kg_ha"].mean(), 2))
 
     # Ranking de municípios
     st.subheader("Top 5 Municípios por Área Plantada")
-    st.write(
+    top_municipios = (
         df.groupby("municipio")["area_plantada_ha"]
           .sum()
           .sort_values(ascending=False)
           .head(5)
+          .reset_index()
     )
+    st.bar_chart(top_municipios.set_index("municipio"))
 
     # Tendência por ano
     st.subheader("Resumo por Ano")
-    resumo_ano = df.groupby("ano")[["area_plantada_ha","rendimento_kg_ha"]].mean()
-    st.line_chart(resumo_ano)
-
-    # Estatísticas por grupo (se existir coluna 'cidade')
-    if "cidade" in df.columns:
-        st.subheader("Média de idade por cidade")
-        st.write(df.groupby("cidade")["idade"].mean())
+    resumo_ano = df.groupby("ano")[["area_plantada_ha","rendimento_kg_ha"]].mean().reset_index()
+    fig = px.line(resumo_ano, x="ano", y=["area_plantada_ha","rendimento_kg_ha"],
+                  labels={"value":"Média","variable":"Indicador"})
+    st.plotly_chart(fig)
 
 # ==============================
 # Página: Gráficos Simples
@@ -67,8 +67,7 @@ elif pagina == "Gráficos Simples":
         st.subheader("Distribuição de Idades")
         st.bar_chart(df["idade"])
 
-    # Histograma com Matplotlib
-    if "idade" in df.columns:
+        # Histograma com Matplotlib
         fig, ax = plt.subplots()
         ax.hist(df["idade"], bins=10, color="skyblue", edgecolor="black")
         ax.set_title("Histograma de Idades")
@@ -94,4 +93,3 @@ elif pagina == "Gráficos Interativos":
         st.subheader(f"Relação entre {x_axis} e {y_axis}")
         fig2 = px.scatter(df, x=x_axis, y=y_axis, color=df.columns[0])
         st.plotly_chart(fig2)
-

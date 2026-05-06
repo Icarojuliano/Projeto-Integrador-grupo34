@@ -40,7 +40,9 @@ Explorar dados do agronegócio brasileiro, realizando um processo de ETL (Extrac
   - app/ → dashboard em Streamlit
     - dashboard.py
   - .gitignore → arquivos/pastas ignorados pelo Git
-  - README.md → documentação do projeto
+  - docs/             # Relatórios e documentação
+ - requirements.txt  # Dependências
+ - README.md         # Documentação principal
 ## Tema do projeto
 Analise da produção agricola no Brasil 
 ## Base de dados 

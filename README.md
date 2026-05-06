@@ -82,4 +82,4 @@ O Dashboard será desenvolvido em Streamlit e apresentará:
 - filtros interativos para selecionar estados e culturas por específicas.
 - Indicadores numéricos (KPIs) com totais e médias de produção.
 ## 🌐 Solução Publicada
-👉 Dashboard Grupo 34
+👉 [Dashboard Grupo 34](https://projeto-integrador-grupo34-hpgaj6pbaailg6hjsnywvq.streamlit.app)

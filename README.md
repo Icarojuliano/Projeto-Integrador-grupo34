@@ -81,3 +81,5 @@ O Dashboard será desenvolvido em Streamlit e apresentará:
 - Linha do tempo com a evolução da produção ao longo dos anos.
 - filtros interativos para selecionar estados e culturas por específicas.
 - Indicadores numéricos (KPIs) com totais e médias de produção.
+## 🌐 Solução Publicada
+👉 Dashboard Grupo 34
